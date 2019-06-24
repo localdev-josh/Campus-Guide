@@ -1,0 +1,218 @@
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('poppins/Poppins-Medium.ttf');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.items {
+    flex-grow: 1;
+}
+
+.map {
+    background: url('../img/unilagMap.png');
+    flex-grow: 4;
+}
+.manage{
+    display: inline-flex;
+    margin-left: 10px;
+    margin-top: 20px;
+    /* padding: 0 em; */
+    flex-direction: row;
+    /* height: 30px; */
+    /* background: red; */
+}
+#sForm{
+    display: flex;
+}
+.searchBtn{
+    padding: 0 2.1em;
+    border: 0px solid transparent;
+    margin-left: 10px;
+    background: url("../img/search.png") no-repeat;
+    width: 39px;
+    height: 39px;
+    background-size: contain;
+}
+.search{
+    width: 100%;
+    align-self: center;
+    background: #FDFDFF;
+    border-radius: 5px;
+    padding: 8px;
+    border: 0px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+}
+.navigate {
+    box-shadow: -2px 0px 40px rgba(0, 0, 0, 0.17);
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    flex-grow: 1;
+    padding: 8px;
+}
+
+.item3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-self: stretch;
+    align-content: stretch;
+    flex-grow: 0.8;
+    justify-self: flex-end;
+}
+
+.nav {
+    flex-grow: 1;
+}
+
+.item31 {
+    align-self: stretch;
+    justify-self: stretch;
+    flex-grow: 7;
+    font-family: poppins-medium;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #000000;
+}
+
+.item32 {
+    align-self: center;
+    align-items: center;
+    width: 70%;
+    flex-grow: 2;
+    justify-content: center;
+}
+
+.logo {
+    flex-grow: 1;
+    background: url("../img/logo.png") no-repeat;
+    margin: 40px auto;
+    width: 197px;
+}
+
+.item2 {
+    align-self: center;
+    flex-grow: 1;
+    margin-bottom: 30px;
+    height: 5px;
+    /* background: red; */
+}
+
+.item2 div {
+    padding: 10px;
+    font-family: poppins-medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    /* margin: 1px auto; */
+}
+
+.navss {
+    width: 100%;
+    padding: 0.9em 1em;
+    /* border: 0px solid transparent; */
+    align-self: center;
+    background: #FDFDFF;
+    border: 0.5px solid rgb(180, 177, 177);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20); */
+    border-radius: 5px;
+}
+
+.submit {
+    background: #9305FE;
+    border-radius: 30px;
+    padding: 0.9em 2.5em;
+    color: #fff;
+    border: 0px solid transparent;
+    float: right;
+    font-family: Poppins-Medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    /* margin: 0 3.8em; */
+    margin-right: 33px;
+}
+
+.route {
+    background: #FFFFFF;
+    width: 100%;
+    flex-grow: 0.2;
+    justify-self: stretch;
+    padding: 1.3em 0;
+    box-shadow: 0px -2px 30px rgba(0, 0, 0, 0.14);
+    /* flex-grow: 3; */
+}
+@media(max-width: 543px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        /* background: red; */
+    }
+    .item2{
+        display: flex;
+        flex-direction: row;
+        padding: 1.0em 0;
+    }
+    .item3{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .map{
+        flex-grow: 14;
+    }
+    #sForm{
+        display: flex;
+        width: 100%;
+        /* margin: 1px auto; */
+    }
+    .item31{
+        display: none;
+    }
+    .item32{
+        margin: 0 0.7em;
+        /* background: red; */
+        display: flex;
+        position: absolute;
+        bottom: 25px;
+        left: 0;
+    }
+    input[type="text"]{
+        margin: 0 1.5em;
+    }
+    .submit{
+        border-radius: 5px;
+        padding: 0.7em 1.2em;
+    }
+    .logo{
+        padding: 0.8em 0;
+    }
+    
+}
